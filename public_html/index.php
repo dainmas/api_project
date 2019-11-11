@@ -30,7 +30,7 @@ if (!App::$session->userLoggedIn()) {
         <main>
             <section class="wrapper">
                 <div class="block">
-                    <h1>Dalyvių Tvarkyklė:</h1>                    
+                    <h1>Dalyvi? Tvarkykl?:</h1>                    
                     <?php print $createForm->render(); ?>
                 </div>
                 <div class="block">
@@ -40,7 +40,7 @@ if (!App::$session->userLoggedIn()) {
                                 <tr>
                                     <th>Nr.</th>
                                     <th>Vardas</th>
-                                    <th>Pavardė</th>
+                                    <th>Pavard?�</th>
                                     <th>Miestas</th>
                                     <th>Trinimas</th>
                                     <th>Redagavimas</th>

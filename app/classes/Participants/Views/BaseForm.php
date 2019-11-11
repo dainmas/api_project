@@ -12,7 +12,7 @@ class BaseForm extends \Core\Views\Form {
                     'type' => 'text',
                 ],
                 'surname' => [
-                    'label' => 'Pavardė',
+                    'label' => 'Pavard?',
                     'type' => 'text',
                 ],
                 'city' => [

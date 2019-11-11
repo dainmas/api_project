@@ -11,7 +11,7 @@ function form_success($filtered_input, &$form) {
     $model = new \App\Users\Model();
     $model->insert($user);
 
-    $form['message'] = 'Registracija sekminga! Galite prisijungti!';
+    $form['message'] = 'Registracija s?kminga! Galite prisijungti!';
 }
 
 switch (get_form_action()) {
@@ -47,9 +47,9 @@ switch (get_form_action()) {
             <section class="wrapper">
                 <div class="block">
                     <?php if ($success): ?>
-                        <h1>Registracija sėkminga!</h1>
+                        <h1>Registracija s?kminga!</h1>
                         <p>
-                            Galite prisijungti paspaudę <a href="/login.php">čia!</a>
+                            Galite prisijungti paspaud? <a href="/login.php">?ia!</a>
                         </p>
                     <?php else: ?>
                         <h1>Registruotis:</h1>

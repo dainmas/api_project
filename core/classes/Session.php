@@ -16,6 +16,7 @@ class Session {
     }
 
     public function loginFromCookie() {
+        //jei SESSION tuscias bus false
         if ($_SESSION ?? false) {
             $this->login($_SESSION['email'], $_SESSION['password']);
         }
