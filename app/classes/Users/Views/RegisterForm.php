@@ -11,6 +11,32 @@ class RegisterForm extends \Core\Views\Form {
                 'method' => 'POST',
             ],
             'fields' => [
+                'age' => [
+                    'label' => 'Age',
+                    'type' => 'number',
+                    'extra' => [
+                        'validators' => [
+                            'validate_not_empty',
+                            'validate_min_18_max_100',
+                            'validate_number_range' => [
+                                'min' => 18,
+                                'max' => 100
+                            ]
+                        ]
+                    ],
+                ],
+                'selector' => [
+                    'type' => 'select',
+                    'label' => 'Vyras/Moteris:',
+//                  'value'=>1
+                    'options' => [
+                        'V',
+                        'M'
+                    ],
+                    'validate' => [
+                        'validate_not_empty'
+                    ]
+                ],
                 'email' => [
                     'label' => 'Email',
                     'type' => 'email',

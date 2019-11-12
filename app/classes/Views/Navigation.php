@@ -10,24 +10,27 @@ class Navigation extends \Core\View {
         parent::__construct($data);
 
         $this->addLink('left', '/', 'Home');
-        
+
         if (App::$session->userLoggedIn()) {
             $user = App::$session->getUser();
             $label = $user->getEmail();
+            
+//            $this->addLink('right', '/index.php#footer', 'About');
             $this->addLink('right', '/logout.php', "Logout($label)");
         } else {
+//            $this->addLink('right', 'https://www.google.lt', 'Win 100$');
             $this->addLink('right', '/login.php', 'Prisijungti');
-            $this->addLink('right', '/register.php', 'Registruotis');            
+            $this->addLink('right', '/register.php', 'Registruotis');
         }
     }
 
     public function addLink($section, $url, $title) {
         $link = ['url' => $url, 'title' => $title];
-        
+
         if ($_SERVER['REQUEST_URI'] == $link['url']) {
             $link['active'] = true;
         }
-        
+
         $this->data[$section][] = $link;
     }
 

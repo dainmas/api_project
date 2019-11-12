@@ -37,7 +37,7 @@ class View {
         //as we require tpl file it's scoped to function's variables
         $data = $this->data;
         
-        //Start buffering output to memory
+        //Start buffering output to memory Ram
         ob_start();
         
         //Load the view (template)

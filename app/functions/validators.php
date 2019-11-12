@@ -22,6 +22,18 @@ function validate_mail($field_value, &$field) {
         $field['error'] = 'Vartotojas tokiu el.paštu jau registruotas!';
         return false;
     }
+
+    return true;
+}
+
+function validate_min_18_max_100($field_input, &$field) {
+    if ($field_input < 18) {
+        $field['error'] = 'Tu per jaunas!';
+        return false;
+    } elseif ($field_input > 100) {
+        $field['error'] = 'Ar nepasendinai savęs?';
+        return false;
+    }
     
     return true;
 }

@@ -7,11 +7,11 @@ $footer = new \App\Views\Footer();
 
 function form_success($filtered_input, &$form) {
     $user = new \App\Users\User($filtered_input);
-
+    
     $model = new \App\Users\Model();
     $model->insert($user);
 
-    $form['message'] = 'Registracija s?kminga! Galite prisijungti!';
+    $form['message'] = 'Registracija sėkminga! Galite prisijungti!';
 }
 
 switch (get_form_action()) {
@@ -47,9 +47,9 @@ switch (get_form_action()) {
             <section class="wrapper">
                 <div class="block">
                     <?php if ($success): ?>
-                        <h1>Registracija s?kminga!</h1>
+                        <h1>Registracija sėkminga!</h1>
                         <p>
-                            Galite prisijungti paspaud? <a href="/login.php">?ia!</a>
+                            Galite prisijungti paspaudę <a href="/login.php">čia!</a>
                         </p>
                     <?php else: ?>
                         <h1>Registruotis:</h1>
