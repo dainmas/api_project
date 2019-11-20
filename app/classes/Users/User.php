@@ -12,11 +12,11 @@ class User {
         } else {
             $this->data = [
                 'id' => null,
-                'selector'=> null,
-                'age'=> null,
+                'name' => null,
+                'selector' => null,
+                'age' => null,
                 'email' => null,
                 'password' => null,
-                
             ];
         }
     }
@@ -27,12 +27,9 @@ class User {
         } else {
             $this->data['id'] = null;
         }
-        if (isset($array['age'])) {
-            $this->setAge($array['age']);
-        } else {
-            $this->data['age'] = null;
-        }
-      
+
+        $this->setName($array['name'] ?? null);
+        $this->setAge($array['age'] ?? null);
         $this->setEmail($array['email'] ?? null);
         $this->setPassword($array['password'] ?? null);
     }
@@ -40,6 +37,7 @@ class User {
     public function getData() {
         return [
             'id' => $this->getId(),
+            'name' => $this->getName(),
             'age' => $this->getAge(),
             'email' => $this->getEmail(),
             'password' => $this->getPassword()
@@ -49,11 +47,15 @@ class User {
     public function setId(int $id) {
         $this->data['id'] = $id;
     }
-    
-     public function setAge(int $age) {
+
+    public function setName(string $name) {
+        $this->data['name'] = $name;
+    }
+
+    public function setAge(int $age) {
         $this->data['age'] = $age;
     }
-    
+
     public function setEmail(string $email) {
         $this->data['email'] = $email;
     }
@@ -65,11 +67,15 @@ class User {
     public function getId() {
         return $this->data['id'];
     }
-    
+
+    public function getName() {
+        return $this->data['name'];
+    }
+
     public function getAge() {
         return $this->data['age'];
     }
-    
+
     public function getEmail() {
         return $this->data['email'];
     }

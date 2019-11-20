@@ -16,6 +16,7 @@ function form_success($filtered_input, &$form) {
     header('Location: ' . '/');
 }
 
+//kai paspaustas mygtukas
 switch (get_form_action()) {
     case 'submit':
         $filtered_input = get_form_input($form->getData());
@@ -31,6 +32,7 @@ switch (get_form_action()) {
         <link rel="stylesheet" href="media/css/normalize.css">
         <link rel="stylesheet" href="media/css/milligram.min.css">
         <link rel="stylesheet" href="media/css/style.css">
+        <!--<link rel="stylesheet" href="media/css/style2.css">-->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--    <script defer src="media/js/app.js"></script>-->
@@ -38,7 +40,7 @@ switch (get_form_action()) {
     <body>
         <!-- Header -->        
         <header>
-            <?php print $navigation->render(); ?>
+<?php print $navigation->render(); ?>
         </header>
 
         <!-- Main Content -->        
@@ -48,14 +50,14 @@ switch (get_form_action()) {
                     <h1>Prisijungti:</h1>
 
                     <!-- Login Form -->
-                    <?php print $form->render(); ?>
+<?php print $form->render(); ?>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->        
         <footer>
-            <?php print $footer->render(); ?>
+<?php print $footer->render(); ?>
         </footer>
     </body>
 </html>

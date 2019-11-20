@@ -6,7 +6,11 @@
                     <?php foreach ($section as $nav_id => $link): ?>
                         <div class="link-wrapper <?php print ($link['active'] ?? false) ? 'active' : ''; ?>">
                             <a href="<?php print $link['url']; ?>">
-                                <?php print $link['title']; ?>
+                                <?php if (is_array($link['title'])): ?> 
+                                    <img src="<?php print $link['title']['icon']; ?>" alt="<?php print $link['title']['alt']?>" />
+                                <?php else: ?>
+                                    <?php print $link['title']; ?>
+                                <?php endif; ?>
                             </a>
                         </div>
                     <?php endforeach; ?>

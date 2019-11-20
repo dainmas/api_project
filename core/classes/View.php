@@ -3,7 +3,7 @@
 namespace Core;
 
 class View {
-
+//šis View.php skirtas priimti duomenų arėjų ir pro nurodytą templatą sugeneruoja html
     protected $data;
 
     public function __construct($data = []) {

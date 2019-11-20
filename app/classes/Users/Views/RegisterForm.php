@@ -11,6 +11,15 @@ class RegisterForm extends \Core\Views\Form {
                 'method' => 'POST',
             ],
             'fields' => [
+                'name' => [
+                    'label' => 'Name',
+                    'type' => 'text',
+                    'extra' => [
+                        'validators' => [
+                            'validate_not_empty',
+                        ]
+                    ],
+                ],
                 'age' => [
                     'label' => 'Age',
                     'type' => 'number',

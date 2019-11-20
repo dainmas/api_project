@@ -18,6 +18,7 @@ const endpoints = {
 function api(url, formData, success, fail) {
     fetch(url, {
         method: 'POST',
+        //form data yra duomenis kuriuos postinam
         body: formData
     }).then(response => response.json())
             .then(obj => {
@@ -153,7 +154,7 @@ const forms = {
         flash: {
             class: function (element, class_name) {
                 const prev = element.className;
-                
+
                 element.className += class_name;
                 setTimeout(function () {
                     element.className = prev;
@@ -191,7 +192,7 @@ const forms = {
                 const errors = form.querySelectorAll('.field-error');
                 if (errors) {
                     errors.forEach(node => {
-                        node.remove();                 
+                        node.remove();
                     });
                 }
             }
@@ -246,7 +247,7 @@ const table = {
         build: function (data) {
             const row = document.createElement('tr');
             row.setAttribute('data-id', data.id);
-
+//data bus objektas, o Object.keys(data)istraukia viska kaip masyva, o masyva galima foreachinti
             Object.keys(data).forEach(data_id => {
                 let td = document.createElement('td');
                 td.innerHTML = data[data_id];
@@ -366,3 +367,10 @@ const app = {
 
 // Launch App
 app.init();
+
+
+
+
+
+
+

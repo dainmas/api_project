@@ -2,8 +2,8 @@
 
 //tikrina ar jaunesnis ir ar ne per senas
 function validate_number_range($field_input, &$field, $params) {
-    if($field_input < $params['min'] || $field_input < $params['max']){
-        $field['error'] = 'Blogai nurodytas amžius';
+    if($field_input < $params['min'] || $field_input > $params['max']){
+        $field['error'] = 'Blogai nurodyti duomenys';
         return false;
     }
      return true;

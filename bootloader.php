@@ -1,5 +1,6 @@
 <?php
-
+//bootloaderis užkrauna klases(kad nerašytumėm dauk require);
+//griežtai reikalauja, kad metuoduose tokio  tipo variablai būtų paduoti
 declare(strict_types = 1);
 
 require 'config.php';

@@ -1,0 +1,104 @@
+
+
+@media screen and (max-width: 748px) {
+
+    .container {
+        width: 100%;
+        position:relative;
+    }
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.hero{
+        margin-top: -17px;
+    }
+
+    /*  .navbar li {
+        margin: 10px 0;
+      }
+      .navbar ul {
+        flex-direction: column;
+      }*/
+
+
+    .hero-container {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+       
+    }
+
+    .hero-text {
+        position: absolute;
+        background-color: #ac0606a1;
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+        bottom: 300px;
+        margin: 0;
+    }
+
+    .reklama {
+        display: flex;
+        font-size: 17px;
+        padding: 20px 15px 15px 0;
+        flex-wrap: wrap;
+    }
+    .cards {
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        flex: 45%;
+        margin-bottom:10px;
+    }
+    .card:nth-child(4n+4){
+        margin-right:10px;
+
+    }
+    .bottle {
+        padding: 30px 5px;
+    }
+    .card-content {
+        padding: 15px 10px;
+        margin-bottom: 10px;
+    }
+    .form-map {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
+        height: 50%;
+    }
+    iframe {
+        width: 100%;
+        height: 50%;
+    }
+    footer{
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width:640px) {
+    .bottle {
+        padding: 40px 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    footer{
+        text-align: center;
+    }
+}
