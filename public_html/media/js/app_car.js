@@ -105,6 +105,7 @@ const forms = {
             forms.ui.errors.show(this.elements.form(), errors);
         },
         fill: function (data) {
+            forms.ui.clear(forms.update.elements.form());
             forms.ui.fill(forms.update.elements.form(), data);
         },
         onCloseListener: function (e) {
@@ -138,11 +139,16 @@ const forms = {
 
             Object.keys(data).forEach(data_id => {
                 if (form[data_id]) {
-//                    console.log(data);
-//                    const option = form.querySelector('option[value="' + data.maker + '"]');
-//                    if (option) {
-//                        option.setAttribute('selected', true);
-//                    }
+                    
+                    // Sukuriame papildoma funkcionaluma select'ui
+                    // Ieskome tokio option'o, kurio value atitiktų iš JSON'o gautą vertę
+                    const option = form.querySelector('option[value="' + data[data_id] + '"]');
+                    if (option) {
+                        // Jeigu toks option'as buvo rastas, jo parentui (pačiam select'ui)
+                        // nustatome vertę
+                        option.parentNode.value = data[data_id];
+                    }
+                    
                     const input = form.querySelector('input[name="' + data_id + '"]');
                     if (input) {
                         input.value = data[data_id];
@@ -151,11 +157,6 @@ const forms = {
             });
         },
         clear: function (form) {
-//            let selectors = form.querySelectorAll('[option]');
-//            selectors.forEach(field =>{
-//                field.removeAttribute('selected');
-//            });
-
             let fields = form.querySelectorAll('[name]')
             fields.forEach(field => {
                 field.value = '';
@@ -352,6 +353,7 @@ const table = {
             success: function (data) {
                 let person_data = data[0];
                 forms.update.show();
+                
                 forms.update.fill(person_data);
             },
             fail: function (errors) {

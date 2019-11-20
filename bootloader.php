@@ -5,7 +5,7 @@ declare(strict_types = 1);
 
 require 'config.php';
 
-// Load Core Classes
+// Load Core Classes /requirina composerio autoload
 require ROOT . '/vendor/autoload.php';
 
 // Load Core Functions

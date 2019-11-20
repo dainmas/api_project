@@ -14,6 +14,7 @@ if (!App::$session->userLoggedIn()) {
 // Filter received data
 $form = (new \App\Cars\Views\ApiForm())->getData();
 $filtered_input = get_form_input($form);
+//var_dump($filtered_input);
 validate_form($filtered_input, $form);
 
 /**
@@ -42,7 +43,7 @@ function form_success($filtered_input, &$form) {
         //idedame i data holderi naujas vertes, kurias ivede useris 
         //ir kurios atejo is javascripto
         $car->setModel($filtered_input['model']);
-        $car->setMaker($filtered_input['mark']);
+        $car->setMaker($filtered_input['maker']);
         $car->setYear($filtered_input['year']);
         
         //vertes, kurias idejome auksciau i data holderi updatinam 
