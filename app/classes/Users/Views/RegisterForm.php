@@ -17,6 +17,7 @@ class RegisterForm extends \Core\Views\Form {
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
+                            'validate_is_alphabet'
                         ]
                     ],
                 ],
@@ -48,11 +49,12 @@ class RegisterForm extends \Core\Views\Form {
                 ],
                 'email' => [
                     'label' => 'Email',
-                    'type' => 'email',
+                    'type' => 'text',
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-                            'validate_mail'
+                            'validate_mail',
+                            'validate_is_email'
                         ]
                     ],
                 ],
