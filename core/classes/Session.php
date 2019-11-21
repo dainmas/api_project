@@ -9,6 +9,8 @@ class Session {
 
     public function __construct() {
         session_start();
+        //modelio reikia, kad žinotume, kad pavyko prisijungti.Userio emailai ir passwordai yra db, 
+        //o modelis tarpininkas tarp Filedb ir duomenu.issitraukiam useri ir žiūrim i db ir matom ar prisijunges
         $this->model = new \App\Users\Model();
 
         // Execute login from cookie

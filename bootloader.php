@@ -1,5 +1,5 @@
 <?php
-//bootloaderis užkrauna klases(kad nerašytumėm dauk require);
+//bootloaderis užkrauna klases(kad nerašytumėm daug require);
 //griežtai reikalauja, kad metuoduose tokio  tipo variablai būtų paduoti
 declare(strict_types = 1);
 

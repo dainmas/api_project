@@ -12,7 +12,7 @@ class Navigation extends \Core\View {
 //        $this->addLink('left', '/', ['icon'=>'media/img/logoDainora.png', 'alt'=>'company logo']);
 
         $this->addLink('left', '/', 'Home');
-        $this->addLink('right', '/about.php', 'About');
+        $this->addLink('right', '/vegetablesabout.php', 'About');
 
         if (App::$session->userLoggedIn()) {
             $user = App::$session->getUser();

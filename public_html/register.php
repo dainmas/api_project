@@ -7,7 +7,7 @@ $footer = new \App\Views\Footer();
 
 function form_success($filtered_input, &$form) {
     $user = new \App\Users\User($filtered_input);
-    
+
     $model = new \App\Users\Model();
     $model->insert($user);
 
@@ -31,8 +31,10 @@ switch (get_form_action()) {
         <title>Register</title>
         <link rel="stylesheet" href="media/css/normalize.css">
         <link rel="stylesheet" href="media/css/milligram.min.css">
-        <link rel="stylesheet" href="media/css/style.css">
-                <!--<link rel="stylesheet" href="media/css/style2.css">-->
+        <!--<link rel="stylesheet" href="media/css/style.css">-->
+        <link rel="stylesheet" href="media/css/vegetables.css">
+
+        <!--<link rel="stylesheet" href="media/css/style2.css">-->
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
