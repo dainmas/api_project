@@ -19,7 +19,7 @@
                         <?php endif; ?>
 
                         <!--fields to be printed-->
-                        <?php if (in_array($field['type'], ['hidden', 'text', 'password', 'email', 'number'])): ?>
+                        <?php if (in_array($field['type'], ['hidden', 'text', 'password', 'email', 'number', 'date'])): ?>
                             <?php require 'elements/input.tpl.php'; ?>
                         <?php elseif ($field['type'] === 'select'): ?>
                             <?php require 'elements/select.tpl.php'; ?>

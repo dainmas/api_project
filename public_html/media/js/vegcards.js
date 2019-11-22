@@ -1,52 +1,52 @@
 
-let cards = [
+let vegetables = [
     {
         id: 1,
-        imgLink: "http://www.brew-dudes.com/blueberry-ale-recipe/271",
-        imgPath: "media/img/blueberry_ale.png",
-        title: "Blueberry Ale",
+        imgLink: "https://www.rachaelraymag.com/recipes/20-carrot-recipes",
+        imgPath: "media/img/carrot.png",
+        title: "Carrot",
         text: "TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but" +
                 "diversify kpis but market-facing."
     },
     {
         id: 2,
-        imgLink: "http://www.castlemalting.com/CastleMaltingBeerRecipes.asp?Command=RecipeView&RecipeID=10",
-        imgPath: "media/img/BelgianDarkAbbey.png",
-        title: "Belgian Dark Abbey",
+        imgLink: "https://www.thespruceeats.com/great-ways-to-enjoy-cauliflower-3052548",
+        imgPath: "media/img/cauliflower.png",
+        title: "Cauliflower",
         text: "Staff engagement synergize productive mindfulness and waste of resources cross" +
                 "sabers, or forcing function shotgun approach drink the Kool-aid."
 
     },
     {
         id: 3,
-        imgLink: "https://www.ratebeer.com/beer/harviestoun-broken-dial/247661/",
-        imgPath: "media/img/broken dial.png",
-        title: "Broken dial",
+        imgLink: "https://www.goodhousekeeping.com/food-recipes/g1633/potato-recipes/",
+        imgPath: "media/img/Potato.png",
+        title: "Potato",
         text: "This gloriously amber coloured ale is one of our brewer’s timeless classics." +
                 "Made with what is often considered the finest hop on the earth, namely the Simcoe Hop."
 
     },
     {
         id: 4,
-        imgLink: "http://www.thefreshloaf.com/node/28374/granville-island-beer-bread",
-        imgPath: "media/img/gran_ville_island.png",
-        title: "Gran Ville island",
+        imgLink: "https://www.thespruceeats.com/what-makes-radishes-spicy-3111662",
+        imgPath: "media/img/radishes.png",
+        title: "Radishes",
         text: "TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but" +
                 "diversify kpis but market-facing. Cook the bread!"
     },
     {
         id: 5,
-        imgLink: "https://commonmancocktails.com/2008/04/04/grimbergen-blonde-ale/",
-        imgPath: "media/img/grinbergen_blonde.png",
-        title: "Grinbergen blonde",
+        imgLink: "https://www.bonappetit.com/recipes/slideshow/radish-recipes",
+        imgPath: "media/img/tomato.png",
+        title: "Tomato",
         text: "Ochre coloured top fermented Abbey Beer with an abv of 6.7%. The use of Gatin" +
                 "barley combined with carefully selected hops creates a perfectly balanced, relatively light tasting beer with a fruity malty taste.",
     },
     {
         id: 6,
-        imgLink: "https://uk.inshaker.com/cocktails/1381-swindler-sour",
-        imgPath: "media/img/swindler.png",
-        title: "Swindler",
+        imgLink: "https://www.theguardian.com/lifeandstyle/2014/dec/27/onion-recipes-soup-fritters-salad-10-best",
+        imgPath: "media/img/onion.png",
+        title: "Onion",
         text: "TUX re-inventing the wheel, and move the needle. Feature creep dogpile that but" +
                 "diversify kpis but market-facing."
     },
@@ -54,25 +54,25 @@ let cards = [
 
 
 
-let cardsContainer = document.querySelector(".cards");
-cards.forEach(card => {
-    let cardView = document.createElement("div");
-    cardView.className = "card";
+let vegetablesContainer = document.querySelector(".cards");
+vegetables.forEach(vegetable => {
+    let vegetableView = document.createElement("div");
+    vegetableView.className = "card";
 
-    cardView.innerHTML += `
+    vegetableView.innerHTML += `
 
-    <a href="${card.imgLink}" target="blank">
+    <a href="${vegetable.imgLink}" target="blank">
     
         <picture class="picture">
-            <img class="bottle" src="${card.imgPath}" alt="Ale" />
+            <img class="bottle" src="${vegetable.imgPath}" alt="Vegetable" />
         </picture>
         <div class="card-content">
-            <h2>${card.title}</h2>
-            <p>${card.text}</p>
+            <h2>${vegetable.title}</h2>
+            <p>${vegetable.text}</p>
         </div>
     </a>             
 </div>`;
-    cardsContainer.appendChild(cardView);
+    vegetablesContainer.appendChild(vegetableView);
 });
 
 

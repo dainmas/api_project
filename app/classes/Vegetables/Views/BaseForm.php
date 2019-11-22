@@ -10,13 +10,19 @@ class BaseForm extends \Core\Views\Form {
                 'product_name' => [
                     'label' => 'Produkto pavadinimas',
                     'type' => 'text',
+                    'extra' => [
+                        'attr' => [
+                            'placeholder' => 'Produkto pavadinimas'
+                        ]
+                    ]
                 ],
                 'price' => [
                     'label' => 'Kaina(Eur)',
                     'type' => 'number',
                     'extra' => [
                         'attr' => [
-                            'step' => '0.01'
+                            'step' => '0.01',
+                            'placeholder' => 'Kaina'
                         ]
                     ]
                 ],

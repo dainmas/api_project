@@ -133,7 +133,9 @@ if (!App::$session->userLoggedIn()) {
         <footer id="footer">
             <?php print $footer->render(); ?>
         </footer>
-        <script src="media/js/vegetables.js"></script>
-        <!--<script src="media/js/app.js"></script>-->
+        <script src="media/js/vegcards.js"></script>
+        <!--<script src="media/js/vegetables.js"></script>-->
+
+
     </body>
 </html>
