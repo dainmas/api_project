@@ -86,7 +86,8 @@ class Vegetable {
      * @param int $price
      */
     public function setPrice(float $price) {
-        $this->data['price'] = $price;
+        
+        $this->data['price'] = number_format($price, 2);
     }
 
     /**

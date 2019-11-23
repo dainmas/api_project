@@ -247,7 +247,7 @@ p {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    
 }
 
 .bottle {
@@ -274,10 +274,10 @@ p {
 
 
 .card {
-    width: 23%;
+    width: calc(25% - 3px);
     background: rgb(168, 168, 204);
     margin-bottom: 2em;
-    margin-right:10px;
+    margin-right:4px;
 
 }
 /*kas ketvirtam elementui*/
