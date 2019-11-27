@@ -60,7 +60,7 @@ if (!App::$session->userLoggedIn()) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Taxi</title>
+        <title>Portalo Taxi</title>
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="media/css/normalize.css">
         <link rel="stylesheet" href="media/css/milligram.min.css">
@@ -83,12 +83,12 @@ if (!App::$session->userLoggedIn()) {
             </section>
 
             <section id="paslaugos">
-                <main class="main-area">
+                <div class="main-area">
                     <div class="service-container">
                         <div class="cards">
                         </div>
                     </div>
-                </main>
+                </div>
 
             </section>
 
@@ -97,13 +97,13 @@ if (!App::$session->userLoggedIn()) {
         </main>
 
         <!-- Footer -->        
-        <footer id="footer">
+        <footer>
             <?php print $footer->render(); ?>
         </footer>
 
-<!--        <div class="bobule-isvaziuoja">
-            <div class="bobule"></div>
-        </div>-->
+        <!--        <div class="bobule-isvaziuoja">
+                    <div class="bobule"></div>
+                </div>-->
 
         <script src="media/js/taxicards.js"></script>
         <script src="media/js/taxi.js"></script>
