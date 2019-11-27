@@ -2,29 +2,29 @@
 let taxis = [
     {
         id: 1,
-        imgLink: "https://www.rachaelraymag.com/recipes/20-carrot-recipes",
+        imgLink: "http://www.gidas.mb.vu.lt/wp-content/uploads/2009/10/taksi.jpg",
         imgPath: "media/img/taxicar.png",
         title: "Apie mus",
-        text: "Ar ieškote patikimos, draugiškos kompanijos? Pristatysim Jus į bet kurią Vilniaus vietą." +
-                "Paskambinkite mums tel.86868686!"
+        text: "Mūsų pavadinimas- Portalo taxi. Ar ieškote patikimos, draugiškos kompanijos? Pristatysim Jus į bet kurią Vilniaus vietą. " +
+                "Paskambinkite mums tel.86868686! Paspausk ant paveikslėlio ir pamatysi koks buvo senoviškas taxi."
     },
     {
         id: 2,
-        imgLink: "https://www.thespruceeats.com/great-ways-to-enjoy-cauliflower-3052548",
+        imgLink: "https://linijos.lt/wp-content/uploads/2017/04/a2b_linijos_vairuotojai.jpg",
         imgPath: "media/img/taxicomfort.jpg",
         title: "Kodėl mes",
-        text: "Mūsų taxi kompanija rūpinasi, kad klientai gautų kokybišką servisą"+
+        text: "Mūsų taxi kompanija rūpinasi, kad klientai gautų kokybišką servisą. "+
                 "Mūsų vairuotojai tvarkingai apsirengę, mandagūs, draugiški."
                 
 
     },
     {
         id: 3,
-        imgLink: "https://www.goodhousekeeping.com/food-recipes/g1633/potato-recipes/",
+        imgLink: "https://cdn1.hellovilnius.lt/wp-content/uploads/2017/11/23-e1509607856708.jpg",
         imgPath: "media/img/studentstaxi.png",
         title: "Nuolaidos",
-        text: "Sek mūsų puslapyje akcijas. Kiekvieną dieną siūlome naujų akcijų." +
-        "Turim nuolaidų lojaliems klientams: po penkto važiavimo 5%  nuolaida"
+        text: "Sek mūsų puslapyje akcijas. Kiekvieną dieną siūlome naujų akcijų. " +
+        "Turim nuolaidų lojaliems klientams: po penkto važiavimo 5%  nuolaida!"
 
     },
     
