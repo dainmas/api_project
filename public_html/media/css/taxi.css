@@ -7,13 +7,14 @@
 body {
     font-family: "Libre Baskerville", serif;
     line-height: 1.4;
+    background-color:rgba(247, 240, 240, 0.781); 
 }
 
 
 /* =============== HEADER =============== */
 
 header {
-    background-color: #3333FF;
+    background-color: rgb(39, 39, 3);
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -167,12 +168,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3333FF;
+    background-color: rgb(39, 39, 3);
     color:white;
 }
 
 .hero{
     background-image: url("/media/img/taxi-hero.jpg");
+    background-size: cover;
 }
 
 .hero-container {
@@ -270,7 +272,7 @@ p {
 .card {
     width: 25%;
     height:calc(400px - 40px);
-    background: rgb(168, 168, 204);
+    background:#3A2F0B;
     border:1px solid grey;
 }
 

@@ -101,9 +101,9 @@ if (!App::$session->userLoggedIn()) {
             <?php print $footer->render(); ?>
         </footer>
 
-        <div class="bobule-isvaziuoja">
+<!--        <div class="bobule-isvaziuoja">
             <div class="bobule"></div>
-        </div>
+        </div>-->
 
         <script src="media/js/taxicards.js"></script>
         <script src="media/js/taxi.js"></script>
