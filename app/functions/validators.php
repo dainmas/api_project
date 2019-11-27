@@ -1,7 +1,7 @@
 <?php
 
 function validate_max_40($field_input, &$field) {
-    if( mb_strlen($field_input > 40)) {
+    if(strlen($field_input) > 40) {
         $field['error'] = 'Per ilgas žodis!';
 		return false;
     }
@@ -10,7 +10,7 @@ function validate_max_40($field_input, &$field) {
 }
 
 function validate_max_500($field_input, &$field) {
-    if( mb_strlen($field_input > 500)) {
+    if(strlen($field_input) > 500) {
         $field['error'] = 'Komentaras per ilgas, jis negali viršyti 500 simbolių!';
 		return false;
     }
@@ -45,14 +45,3 @@ function validate_mail($field_value, &$field) {
     return true;
 }
 
-function validate_min_18_max_100($field_input, &$field) {
-    if ($field_input < 18) {
-        $field['error'] = 'Tu per jaunas!';
-        return false;
-    } elseif ($field_input > 100) {
-        $field['error'] = 'Ar nepasendinai savęs?';
-        return false;
-    }
-    
-    return true;
-}

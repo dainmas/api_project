@@ -18,7 +18,7 @@ class RegisterForm extends \Core\Views\Form {
                         'validators' => [
                             'validate_not_empty',
                             'validate_is_alphabet',
-                            'validate_max_40'
+                            'validate_max_40',
                         ]
                     ],
                 ],
@@ -29,7 +29,7 @@ class RegisterForm extends \Core\Views\Form {
                         'validators' => [
                             'validate_not_empty',
                             'validate_is_alphabet',
-                            'validate_max_40'
+                            'validate_max_40',
                         ]
                     ],
                 ],
@@ -66,11 +66,6 @@ class RegisterForm extends \Core\Views\Form {
                     'label' => 'Telefono numeris',
                     'type' => 'number',
                     'optional' => true,
-                    'extra' => [
-                        'validators' => [
-//                            'validate_not_empty',
-                        ]
-                    ]
                 ],
             ],
             'buttons' => [

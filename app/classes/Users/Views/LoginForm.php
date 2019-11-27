@@ -12,20 +12,22 @@ class LoginForm extends \Core\Views\Form {
             ],
             'fields' => [
                 'email' => [
-                    'label' => 'Email',
+                    'label' => 'El.Paštas',
                     'type' => 'email',
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
+                            'validate_is_email',
+                         
                         ]
                     ],
                 ],
                 'password' => [
-                    'label' => 'Password',
+                    'label' => 'Slaptažodis',
                     'type' => 'password',
                     'extra' => [
                         'validators' => [
-                            'validate_not_empty'
+                            'validate_not_empty',
                         ]
                     ],
                 ],
@@ -37,7 +39,7 @@ class LoginForm extends \Core\Views\Form {
             ],
             'validators' => [
                 'validate_login'
-            ],            
+            ],
             'callbacks' => [
                 'success' => 'form_success',
             ],
