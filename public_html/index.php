@@ -13,7 +13,6 @@ date_default_timezone_set('Europe/Vilnius');
 
 $date = date("l");
 
-
 switch ($date) {
     case 'Monday':
         $date = "Pirmadienis";
@@ -56,6 +55,7 @@ for ($d = 0; $d < $days; $d++) {
 if (!App::$session->userLoggedIn()) {
     header('Location: /login.php');
 }
+
 ?>
 <html>
     <head>
