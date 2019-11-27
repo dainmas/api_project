@@ -55,7 +55,6 @@ for ($d = 0; $d < $days; $d++) {
 if (!App::$session->userLoggedIn()) {
     header('Location: /login.php');
 }
-
 ?>
 <html>
     <head>
@@ -101,9 +100,12 @@ if (!App::$session->userLoggedIn()) {
         <footer id="footer">
             <?php print $footer->render(); ?>
         </footer>
+
+        <div class="bobule-isvaziuoja">
+            <div class="bobule"></div>
+        </div>
+
         <script src="media/js/taxicards.js"></script>
         <script src="media/js/taxi.js"></script>
-
-
     </body>
 </html>

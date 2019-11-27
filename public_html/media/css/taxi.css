@@ -339,11 +339,10 @@ iframe {
 }
 
 
-
 .bobule {
     width: 50px;
     height: 72px;
-    background-image: url(http://i.imgur.com/xtk0SCC.png);
+    background-image: url(/media/img/bobuletaksiste.png);
     animation: moveX 1s steps(10) infinite;
 }
 
