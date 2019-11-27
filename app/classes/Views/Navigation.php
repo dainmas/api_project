@@ -11,15 +11,15 @@ class Navigation extends \Core\View {
         
 //        $this->addLink('left', '/', ['icon'=>'media/img/logoDainora.png', 'alt'=>'company logo']);
 
-        $this->addLink('left', '/', 'Home');
-        $this->addLink('right', '/vegetablesabout.php', 'About');
+        $this->addLink('left', '/', 'Titulinis');
+        $this->addLink('right', '/feedback.php', 'Atsiliepimai');
 
         if (App::$session->userLoggedIn()) {
             $user = App::$session->getUser();
             $label = $user->getName();
 
 //            $this->addLink('right', '/index.php#footer', 'About');
-            $this->addLink('right', '/logout.php', "Logout($label)");
+            $this->addLink('right', '/logout.php', "Atsijungti($label)");
         } else {
 //            $this->addLink('right', 'https://www.google.lt', 'Win 100$');
             $this->addLink('right', '/login.php', 'Prisijungti');

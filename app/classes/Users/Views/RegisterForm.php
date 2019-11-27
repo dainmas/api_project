@@ -12,43 +12,29 @@ class RegisterForm extends \Core\Views\Form {
             ],
             'fields' => [
                 'name' => [
-                    'label' => 'Name',
+                    'label' => 'Vardas',
                     'type' => 'text',
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-                            'validate_is_alphabet'
+                            'validate_is_alphabet',
+                            'validate_max_40'
                         ]
                     ],
                 ],
-                'age' => [
-                    'label' => 'Age',
-                    'type' => 'number',
+                'surname' => [
+                    'label' => 'Pavardė',
+                    'type' => 'text',
                     'extra' => [
                         'validators' => [
                             'validate_not_empty',
-                            'validate_min_18_max_100',
-                            'validate_number_range' => [
-                                'min' => 18,
-                                'max' => 100
-                            ]
+                            'validate_is_alphabet',
+                            'validate_max_40'
                         ]
                     ],
                 ],
-                'selector' => [
-                    'type' => 'select',
-                    'label' => 'Vyras/Moteris:',
-//                  'value'=>1
-                    'options' => [
-                        'V',
-                        'M'
-                    ],
-                    'validate' => [
-                        'validate_not_empty'
-                    ]
-                ],
                 'email' => [
-                    'label' => 'Email',
+                    'label' => 'El. paštas',
                     'type' => 'text',
                     'extra' => [
                         'validators' => [
@@ -75,6 +61,16 @@ class RegisterForm extends \Core\Views\Form {
                             'validate_not_empty'
                         ]
                     ],
+                ],
+                'phone_number' => [
+                    'label' => 'Telefono numeris',
+                    'type' => 'number',
+                    'optional' => true,
+                    'extra' => [
+                        'validators' => [
+//                            'validate_not_empty',
+                        ]
+                    ]
                 ],
             ],
             'buttons' => [

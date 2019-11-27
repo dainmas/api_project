@@ -1,5 +1,24 @@
 <?php
 
+function validate_max_40($field_input, &$field) {
+    if( mb_strlen($field_input > 40)) {
+        $field['error'] = 'Per ilgas žodis!';
+		return false;
+    }
+	
+	return true;
+}
+
+function validate_max_500($field_input, &$field) {
+    if( mb_strlen($field_input > 500)) {
+        $field['error'] = 'Komentaras per ilgas, jis negali viršyti 500 simbolių!';
+		return false;
+    }
+	
+	return true;
+}
+
+
 function validate_login($filtered_input, &$form) {
     $login_success = \App\App::$session->login(
             $filtered_input['email'],

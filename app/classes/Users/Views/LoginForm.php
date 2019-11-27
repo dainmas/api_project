@@ -32,7 +32,7 @@ class LoginForm extends \Core\Views\Form {
             ],
             'buttons' => [
                 'submit' => [
-                    'title' => 'Login',
+                    'title' => 'Prisijungti',
                 ],
             ],
             'validators' => [

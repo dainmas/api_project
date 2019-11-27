@@ -31,10 +31,7 @@ switch (get_form_action()) {
         <title>Login</title>
         <link rel="stylesheet" href="media/css/normalize.css">
         <link rel="stylesheet" href="media/css/milligram.min.css">
-        <!--<link rel="stylesheet" href="media/css/style.css">-->
-        <link rel="stylesheet" href="media/css/vegetables.css">
-
-        <!--<link rel="stylesheet" href="media/css/style2.css">-->
+        <link rel="stylesheet" href="media/css/taxi.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--    <script defer src="media/js/app.js"></script>-->

@@ -36,7 +36,7 @@ let vegetables = [
     },
     {
         id: 5,
-        imgLink: "https://www.bonappetit.com/recipes/slideshow/radish-recipes",
+        imgLink: "https://www.allrecipes.com/article/our-best-fresh-tomato-recipes/",
         imgPath: "media/img/tomato.png",
         title: "Tomato",
         text: "Ochre coloured top fermented Abbey Beer with an abv of 6.7%. The use of Gatin" +

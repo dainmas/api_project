@@ -8,7 +8,7 @@ class Footer extends \Core\View {
 
     public function __construct($data = []) {
         parent::__construct($data);
-        $this->data = ['created_by' => 'Dainora'];
+        $this->data = ['created_by' => 'Dainora Masiulienė'];
     }
 
     public function render($template_path = ROOT . '/app/templates/footer.tpl.php') {

@@ -13,10 +13,10 @@ class User {
             $this->data = [
                 'id' => null,
                 'name' => null,
-                'selector' => null,
-                'age' => null,
+                'surname' => null,
                 'email' => null,
                 'password' => null,
+                'phone_number' => null
             ];
         }
     }
@@ -29,18 +29,24 @@ class User {
         }
 
         $this->setName($array['name'] ?? null);
-        $this->setAge($array['age'] ?? null);
+        $this->setSurname($array['surname'] ?? null);
         $this->setEmail($array['email'] ?? null);
         $this->setPassword($array['password'] ?? null);
+        if ($array['phone_number'] ?? false) {
+            $this->setPhoneNumber($array['phone_number']);
+        }else{
+             $this->data['phone_number'] = null;
+        }
     }
 
     public function getData() {
         return [
             'id' => $this->getId(),
             'name' => $this->getName(),
-            'age' => $this->getAge(),
+            'surname' => $this->getSurname(),
             'email' => $this->getEmail(),
-            'password' => $this->getPassword()
+            'password' => $this->getPassword(),
+            'phone_number' => $this->getPhoneNumber(),
         ];
     }
 
@@ -52,8 +58,8 @@ class User {
         $this->data['name'] = $name;
     }
 
-    public function setAge(int $age) {
-        $this->data['age'] = $age;
+    public function setSurname(string $surname) {
+        $this->data['surname'] = $surname;
     }
 
     public function setEmail(string $email) {
@@ -64,6 +70,10 @@ class User {
         $this->data['password'] = $password;
     }
 
+     public function setPhoneNumber(int $phone_number) {
+        $this->data['phone_number'] = $phone_number;
+    }
+    
     public function getId() {
         return $this->data['id'];
     }
@@ -72,8 +82,8 @@ class User {
         return $this->data['name'];
     }
 
-    public function getAge() {
-        return $this->data['age'];
+    public function getSurname() {
+        return $this->data['surname'];
     }
 
     public function getEmail() {
@@ -84,4 +94,7 @@ class User {
         return $this->data['password'];
     }
 
+    public function getPhoneNumber() {
+        return $this->data['phone_number'];
+    }
 }
