@@ -10,7 +10,6 @@ body {
     background-color:rgba(247, 240, 240, 0.781); 
 }
 
-
 /* =============== HEADER =============== */
 
 header {
@@ -338,7 +337,7 @@ iframe {
         margin-bottom:0;
 
     }
-    
+
 }
 
 
@@ -364,6 +363,7 @@ iframe {
     animation-name: slidein;
     overflow: hidden;
 }
+
 @keyframes slidein {
     from {
         margin-left: 0%;
